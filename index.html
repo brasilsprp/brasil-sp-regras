@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#09090d">
+  <title>Regras | Brasil SP Roleplay</title>
+  <meta name="description" content="Central oficial de regras do Brasil SP Roleplay. Respeito, realismo e roleplay.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient"></div>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Brasil SP início">
+      <img class="brand-logo" src="Emblema Brasil SP Roleplay.png" alt="Brasil SP Roleplay Logo">
+      <span class="brand-copy"><strong>BRASIL SP</strong><small>ROLEPLAY • REGRAS OFICIAIS</small></span>
+    </a>
+    <nav class="desktop-nav" aria-label="Navegação principal">
+      <a href="#inicio">Início</a><a class="active" href="#regras">Regras</a><a href="#categorias">Categorias</a>
+    </nav>
+    <a class="discord-link" href="https://discord.gg/B9uPEWKr32" target="_blank" rel="noreferrer"><span class="discord-dot"></span> ENTRAR NO DISCORD <span aria-hidden="true">↗</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy">
+        <div class="eyebrow"><span></span> CENTRAL DE REGRAS OFICIAL</div>
+        <h1>RESPEITO.<br><em>REALISMO.</em><br>ROLEPLAY.</h1>
+        <p>Conheça as regras, preserve sua história e faça parte de uma cidade onde cada escolha tem consequências.</p>
+        <div class="hero-actions">
+          <a class="button button-red" href="#regras">EXPLORAR REGRAS <span>↓</span></a>
+          <div class="hero-note"><span class="pulse"></span><span><b>BRASIL SP</b><small>SÃO PAULO É NÓS!</small></span></div>
+        </div>
+      </div>
+      
+      <div class="hero-art" role="img" aria-label="Arte oficial Brasil SP Roleplay">
+        <div class="art-overlay"></div>
+        <div class="hero-logo-container">
+          <img src="Emblema Brasil SP Roleplay.png" alt="Brasil SP Roleplay Emblema" class="hero-logo-img">
+        </div>
+        <div class="art-caption">SUA HISTÓRIA<br>COMEÇA AQUI<span>_</span></div>
+      </div>
+
+      <div class="hero-bottom"><span>01 / GUIA DA CIDADE</span><span>RESPEITE O RP • RESPEITE A CIDADE</span></div>
+    </section>
+
+    <section class="rules-section" id="regras">
+      <div class="section-heading">
+        <div><div class="eyebrow"><span></span> LEIA ANTES DE JOGAR</div><h2>REGRAS DA <em>CIDADE</em></h2></div>
+        <p>Encontre rapidamente a regra que procura.<br>Use a pesquisa ou escolha uma categoria.</p>
+      </div>
+      <div class="search-wrap"><span class="search-icon">⌕</span><input id="ruleSearch" type="search" placeholder="Pesquisar regras, termos ou palavras-chave..." autocomplete="off"><kbd>⌕</kbd></div>
+      <div class="category-layout" id="categorias">
+        <aside class="sidebar">
+          <div class="side-title">CATEGORIAS <span id="categoryCount">07</span></div>
+          <button class="category active" data-category="all"><span class="cat-icon">▦</span><span>Todas as regras</span><b>›</b></button>
+          <button class="category" data-category="geral"><span class="cat-icon">◈</span><span>Termos & Gerais</span><b>›</b></button>
+          <button class="category" data-category="ilegal"><span class="cat-icon">◆</span><span>Favelas & Ilegal</span><b>›</b></button>
+          <button class="category" data-category="safe"><span class="cat-icon">⬡</span><span>Áreas Safe & Hospital</span><b>›</b></button>
+          <button class="category" data-category="rp"><span class="cat-icon">♙</span><span>Regras de Roleplay</span><b>›</b></button>
+          <button class="category" data-category="empregos"><span class="cat-icon">💼</span><span>Empregos & Mecânica</span><b>›</b></button>
+          <button class="category" data-category="prefeitura"><span class="cat-icon">⚖</span><span>Prefeitura, Staff & Jurídico</span><b>›</b></button>
+          <div class="sidebar-tip"><span>!</span><div><b>FICOU COM DÚVIDA?</b><p>Consulte a equipe da cidade pelo Discord antes de agir.</p><a href="https://discord.gg/B9uPEWKr32" target="_blank" rel="noreferrer">PEDIR AJUDA ↗</a></div></div>
+        </aside>
+        
+        <div class="rule-content">
+          <div class="rule-toolbar">
+            <div><span class="red-bar"></span><strong id="currentTitle">TODAS AS REGRAS</strong><small id="resultCount">07 TÓPICOS</small></div>
+            <button id="expandAll" class="expand-btn">EXPANDIR TUDO <span>＋</span></button>
+          </div>
+          
+          <div id="rulesList" class="rules-list">
+            
+            <!-- 01. INTRODUÇÃO, TERMOS E DIRETRIZES GERAIS -->
+            <article class="rule-card" data-category="geral" data-search="introdução termos consentimento vip compras punições regras gerais preconceito economia wipe">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">01</span><span class="rule-q-text"><strong>INTRODUÇÃO, TERMOS & DIRETRIZES GERAIS</strong><small>Consentimento, compras VIP, wipes e conduta geral</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p><strong>Atenção e Prerrogativa:</strong> A equipe possui total prerrogativa para orientar, advertir, remanejar ou excluir membros que não estejam em conformidade com os padrões de conduta e roleplay.</p>
+                <ul>
+                  <li><strong>Termo de Consentimento:</strong> O jogador declara estar ciente das regras e autoriza o uso de voz/imagem para mídias e marketing do servidor. Classificação indicativa: maiores de 18 anos.</li>
+                  <li><strong>Compras e Benefícios VIP:</strong> Vantagens virtuais concedem uso exclusivo na plataforma. Não concedem imunidade a regras ou punições. Chargebacks geram banimento permanente.</li>
+                  <li><strong>Wipe e Temporadas:</strong> O servidor opera em temporadas (seasons) com eventuais wipes de economia, sem anular o histórico de punições anteriores.</li>
+                  <li><strong>Conduta Geral:</strong> Proibida discriminação, racismo, homofobia, discurso de ódio, flaming ou Dark RP. O bom senso é obrigatório. Comércio de itens por dinheiro real fora do jogo resulta em banimento permanente.</li>
+                </ul>
+                <div class="rule-warning">O desconhecimento das regras não será aceito como justificativa para infrações.</div>
+              </div>
+            </article>
+
+            <!-- 02. FAVELAS, FACÇÕES E ATIVIDADES ILEGAIS -->
+            <article class="rule-card" data-category="ilegal" data-search="favelas facções invasões áreas vermelhas baú pacificação caixinha delegacias">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">02</span><span class="rule-q-text"><strong>FAVELAS, FACÇÕES & ATIVIDADES ILEGAIS</strong><small>Comunidades, invasões, baús e fugas</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p>Regulamentação completa para facções, organizações criminosas e conflitos armados na cidade.</p>
+                <ul>
+                  <li><strong>Regras de Favelas:</strong> Limite máximo de 60 membros setados (40 para facções de rua). A polícia pode fazer patrulhamento preventivo, mas abordagens exigem motivo plausível. Comunidades são áreas de risco.</li>
+                  <li><strong>Invasões e Áreas Vermelhas:</strong> Exigem RP prévio, contexto e provas. É proibido carregar policiais para áreas vermelhas para saque. Aplicar GG com jogadores no campo de visão é proibido. Invasões entre facções exigem no mínimo 7 e máximo 40 membros, sem alianças.</li>
+                  <li><strong>Incursões Policiais (Quebra de Baú):</strong> Exigem autorização da Prefeitura e Jurídico, agendamento de 24h, entre 18h e 22h. Não há limite para o lado ilegal na defesa, sendo permitida a ajuda de apenas 1 aliado.</li>
+                  <li><strong>Pacificação:</strong> Após incursão bem-sucedida, a comunidade fica pacificada por 24 horas (sem atividades ilegais e com acréscimo de 12h extras por infração).</li>
+                  <li><strong>Fugas e Abordagens:</strong> Fugas a pé permitem imobilização por cabeçada. Socos à distância configuram Power Gaming. Código 3 e Código 5 regulam intervenções de risco.</li>
+                  <li><strong>Delegacias:</strong> Proibida invasão sem planejamento, provas e contexto narrativo adequado. Não podem ser invadidas apenas para resgatar presos.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 03. ÁREAS SAFE E HOSPITAL -->
+            <article class="rule-card" data-category="safe" data-search="áreas safe hospital upas 25 de março praça central concessionária atendimento médico">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">03</span><span class="rule-q-text"><strong>ÁREAS SAFE & HOSPITAL</strong><small>Zonas neutras e diretrizes de atendimento médico</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p>Locais protegidos e regras de conduta hospitalar para preservar a imersão e segurança.</p>
+                <ul>
+                  <li><strong>Safezones:</strong> Hospital (UPAs), 25 de Março, Praça central e Concessionária. Proibido roubar, sequestrar, atirar ou fazer camperagem. Puxar com corda para fora da safe é proibido.</li>
+                  <li><strong>Abordagem na Safe:</strong> A polícia pode abordar na safe se o indivíduo estiver mascarado, com coldre, colete ou armamento aparente. Reação agressiva sem contexto é proibida.</li>
+                  <li><strong>Conduta no Hospital:</strong> Proibido estacionar em vagas de ambulância, poluição sonora, uso de máscaras/capacetes ou correr em áreas de tratamento. Recusar encaminhamento médico indicado constitui Anti-RP.</li>
+                  <li><strong>Proteção aos Profissionais:</strong> Médicos e bombeiros em serviço não podem ser assaltados, sequestrados ou agredidos.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 04. REGRAS DE ROLEPLAY -->
+            <article class="rule-card" data-category="rp" data-search="roleplay rp metagaming powergaming combat logging amor à vida voz voip">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">04</span><span class="rule-q-text"><strong>REGRAS DE ROLEPLAY (RP)</strong><small>Conceitos fundamentais de imersão</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p>Conceitos essenciais para manter o realismo e a imersão coletiva na cidade:</p>
+                <ul>
+                  <li><strong>Metagaming (MG):</strong> Proibido utilizar informações externas (Discord, streams) no jogo. Toda comunicação de RP ocorre pelo VOIP original.</li>
+                  <li><strong>Powergaming (PG):</strong> Realizar ações sobre-humanas ou impossíveis na vida real.</li>
+                  <li><strong>Combat Logging:</strong> Desconectar-se para fugir de ações, prisões ou morte é terminantemente proibido.</li>
+                  <li><strong>Amor à Vida (ALV):</strong> Priorize a vida do seu personagem perante ameaças armadas diretas.</li>
+                  <li>Termos administrativos (como "prefeitura", "regras", "staffs") não devem ser ditos no chat de voz para não quebrar a imersão.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 05. EMPREGOS, APLICATIVOS E MECÂNICA -->
+            <article class="rule-card" data-category="empregos" data-search="empregos legais uber caçador chamados mecânica veículos">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">05</span><span class="rule-q-text"><strong>EMPREGOS LEGAIS, APLICATIVOS & MECÂNICA</strong><small>Normas de trabalho, Uber, caçador e oficinas</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p>Diretrizes para o exercício profissional legal e convivência nas oficinas mecânicas.</p>
+                <ul>
+                  <li><strong>Empregos Legais:</strong> Veículos de trabalho são exclusivos para a função. Proibido usar máscaras em serviço ou realizar crimes estando contratado (sujeito a exoneração). Obrigatório RP de demissão.</li>
+                  <li><strong>Uber:</strong> Exclusivo para veículos de 4 portas ou táxis (e motos na modalidade Uber Moto). Proibido sequestrar passageiros. Se abordado durante corrida, o motorista deve render-se de imediato.</li>
+                  <li><strong>Caçador:</strong> Proibido utilizar armas do emprego para atividades indevidas.</li>
+                  <li><strong>Chamados:</strong> Proibido criar contas falsas ou enviar chamados genéricos/sem contexto (como "socorro", "vem cá lindo"), sob pena de serem ignorados.</li>
+                  <li><strong>Mecânica:</strong> Proibido entrar em áreas restritas sem autorização, causar tumultos ou poluição sonora. Respeite a fila de atendimento.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 06. CRIMES, ASSALTOS E FURTOS -->
+            <article class="rule-card" data-category="ilegal" data-search="assalto furto refém negociação trabalhador profissional serviço reconhecimento">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">06</span><span class="rule-q-text"><strong>CRIMES, ASSALTOS, FURTOS & REFÉNS</strong><small>Regras para assaltos, reféns e profissionais</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p>Normas específicas para condutas criminosas e abordagens a civis e trabalhadores.</p>
+                <ul>
+                  <li><strong>Assaltos e Furtos:</strong> Permitidos apenas com o aviso <em>“RISCO DE ASSALTO”</em> na tela. Furto é a subtração sem contato direto. Proibido assaltar veículos de trabalhadores legais.</li>
+                  <li><strong>Voz e Abordagem:</strong> Voz de assalto deve ser emanada com a garganta no máximo/gritando. Proibido ficar no porta-malas durante a ação.</li>
+                  <li><strong>Reféns:</strong> Máximo de 8 reféns para ações gerais. Proibido pedir dinheiro direto ao refém (negociação é com a polícia).</li>
+                  <li><strong>Profissionais:</strong> Proibido matar, agredir ou sequestrar médicos, bombeiros, mecânicos ou policiais em serviço sem justificativa extrema baseada em RP prévio e provas.</li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- 07. PREFEITURA, STAFF E JURÍDICO -->
+            <article class="rule-card" data-category="prefeitura" data-search="prefeitura staff tickets denúncias provas vídeo jurídico corregedoria advogados">
+              <button class="rule-question" type="button" aria-expanded="false"><span class="rule-number">07</span><span class="rule-q-text"><strong>PREFEITURA, STAFF & JURÍDICO</strong><small>Processos judiciais, denúncias e corregedoria</small></span><span class="rule-chevron">＋</span></button>
+              <div class="rule-answer">
+                <p>Estrutura legal, suporte administrativo e diretrizes do sistema judiciário da cidade.</p>
+                <ul>
+                  <li><strong>Denúncias e Tickets:</strong> Devem ser abertas no Discord com provas obrigatórias em <strong>vídeo</strong> (prints não são aceitos). O denunciado tem prazo mínimo de 60 minutos para defesa.</li>
+                  <li><strong>Atuação da Staff:</strong> Proibida a intervenção da staff em RPs ativos. Logs servem apenas para confirmação e não como prova única. Imparcialidade é obrigatória.</li>
+                  <li><strong>Jurídico:</strong> Proibida a corrupção no setor jurídico. Policiais não podem impedir o acesso de detentos a advogados. Ocorrências com órgãos públicos passam primeiro pela ouvidoria interna e depois pela corregedoria. Penas de até 10 meses podem solicitar conversão em serviços comunitários.</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+          
+          <div id="emptyState" class="empty-state" hidden><span>⌕</span><strong>NENHUMA REGRA ENCONTRADA</strong><p>Tente outro termo ou selecione uma categoria diferente.</p></div>
+          <div class="content-footer"><span><i></i> REGULAMENTO OFICIAL ATUALIZADO</span><span>BRASIL SP © <span id="year"></span></span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bottom-banner">
+      <div><span class="eyebrow"><span></span> A CIDADE É FEITA POR VOCÊ</span><h2>FAÇA SUA HISTÓRIA.<br><em>RESPEITE A DOS OUTROS.</em></h2></div>
+      <a class="button button-red" href="https://discord.gg/B9uPEWKr32" target="_blank" rel="noreferrer">ACESSAR DISCORD ↗</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a class="brand" href="#inicio">
+      <img class="brand-logo" src="Emblema Brasil SP Roleplay.png" alt="Brasil SP Roleplay Logo">
+      <span class="brand-copy"><strong>BRASIL SP</strong><small>RESPEITO • REALISMO • ROLEPLAY</small></span>
+    </a>
+    <span>FEITO PARA A CIDADE. <b>SP É NÓS.</b></span>
+  </footer>
+
+  <!-- SCRIPT DE NAVEGAÇÃO E CLIQUES INTEGRADO -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const categories = [...document.querySelectorAll('.category')];
+      const cards = [...document.querySelectorAll('.rule-card')];
+      const search = document.getElementById('ruleSearch');
+      const list = document.getElementById('rulesList');
+      const empty = document.getElementById('emptyState');
+      const title = document.getElementById('currentTitle');
+      const count = document.getElementById('resultCount');
+      const expandAll = document.getElementById('expandAll');
+      let activeCategory = 'all';
+
+      const categoryNames = {
+        all: 'TODAS AS REGRAS',
+        geral: 'TERMOS & GERAIS',
+        ilegal: 'FAVELAS & ILEGAL',
+        safe: 'ÁREAS SAFE & HOSPITAL',
+        rp: 'REGRAS DE ROLEPLAY',
+        empregos: 'EMPREGOS & MECÂNICA',
+        prefeitura: 'PREFEITURA, STAFF & JURÍDICO'
+      };
+
+      function filterRules() {
+        const term = search ? search.value.trim().toLocaleLowerCase('pt-BR') : '';
+        let visible = 0;
+        cards.forEach(card => {
+          const categoryMatch = activeCategory === 'all' || card.dataset.category === activeCategory;
+          const searchMatch = !term || (card.innerText + ' ' + (card.dataset.search || '')).toLocaleLowerCase('pt-BR').includes(term);
+          const show = categoryMatch && searchMatch;
+          card.hidden = !show;
+          if (show) visible++;
+        });
+        if (title) title.textContent = categoryNames[activeCategory] || categoryNames.all;
+        if (count) count.textContent = `${String(visible).padStart(2, '0')} ${visible === 1 ? 'TÓPICO' : 'TÓPICOS'}`;
+        if (empty) empty.hidden = visible !== 0;
+        if (list) list.hidden = visible === 0;
+        if (expandAll) {
+          expandAll.innerHTML = cards.some(c => !c.hidden && !c.classList.contains('open'))
+            ? 'EXPANDIR TUDO <span>＋</span>' : 'RECOLHER TUDO <span>−</span>';
+        }
+      }
+
+      categories.forEach(button => button.addEventListener('click', () => {
+        categories.forEach(item => item.classList.toggle('active', item === button));
+        activeCategory = button.dataset.category;
+        filterRules();
+      }));
+
+      if (search) {
+        search.addEventListener('input', filterRules);
+      }
+
+      // Ativação robusta do clique nos cartões de regras
+      document.addEventListener('click', (e) => {
+        const btn = e.target.closest('.rule-question');
+        if (btn) {
+          e.preventDefault();
+          const card = btn.closest('.rule-card');
+          if (card) {
+            const isOpen = card.classList.toggle('open');
+            btn.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+          }
+        }
+      });
+
+      if (expandAll) {
+        expandAll.addEventListener('click', () => {
+          const visibleCards = cards.filter(card => !card.hidden);
+          const shouldOpen = visibleCards.some(card => !card.classList.contains('open'));
+          visibleCards.forEach(card => {
+            card.classList.toggle('open', shouldOpen);
+            const btn = card.querySelector('.rule-question');
+            if (btn) btn.setAttribute('aria-expanded', shouldOpen ? 'true' : 'false');
+          });
+          expandAll.innerHTML = shouldOpen ? 'RECOLHER TUDO <span>−</span>' : 'EXPANDIR TUDO <span>＋</span>';
+        });
+      }
+
+      const yearEl = document.getElementById('year');
+      if (yearEl) yearEl.textContent = new Date().getFullYear();
+
+      filterRules();
+    });
+  </script>
+</body>
+</html>
